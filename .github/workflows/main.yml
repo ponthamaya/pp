@@ -22,7 +22,7 @@ jobs:
       - name: Make gradlew executable
         run: chmod +x ./gradlew
       - name: Build
-        run: ./gradlew --parallel app:assembleRelease
+        run: ./gradlew --parallel pp:assembleRelease
      # Only upload artifacts built on Linux
       - name: Upload build artifact
         if: runner.os == 'Linux'
